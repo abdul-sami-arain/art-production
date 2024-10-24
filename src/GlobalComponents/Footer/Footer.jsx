@@ -24,20 +24,20 @@ const Footer = () => {
         // ]},
         {
             name: 'Help Center', links: [
-                { title: 'Home', link: '#' },
-                { title: 'About Us', link: '#' },
-                { title: 'Portfolio', link: '#' },
-                { title: 'Services', link: '#' },
-                { title: 'Contact Us', link: '#' },
+                { title: 'Home', link: '/' },
+                { title: 'About Us', link: '/about-us' },
+                { title: 'Portfolio', link: '/our-projects' },
+                { title: 'Services', link: '/services' },
+                { title: 'Contact Us', link: '/contact-us' },
             ]
         },
     ]
     const footerSocialIcons = [
-        { link: '#', icon: <FaFacebookF size={20} /> },
-        { link: '#', icon: <FaInstagram size={20} /> },
-        { link: '#', icon: <FaLinkedinIn size={20} /> },
-        { link: '#', icon: <FaYoutube size={20} /> },
-        { link: '#', icon: <FaVimeoV size={20} /> }
+        { link: 'https://www.facebook.com/artproductionLT', icon: <FaFacebookF size={20} /> },
+        { link: 'https://www.instagram.com/artproductionlt/?igshid=bu17y5r2z2wy', icon: <FaInstagram size={20} /> },
+        { link: 'https://www.linkedin.com/company/artproductionlt', icon: <FaLinkedinIn size={20} /> },
+        { link: 'https://www.youtube.com/channel/UCt8enqdB1MK31dC1xAF5JkQ', icon: <FaYoutube size={20} /> },
+        { link: 'https://vimeo.com/artproductionlt', icon: <FaVimeoV size={20} /> }
     ]
     return (
         <div className='footer-main-container'>
@@ -71,8 +71,8 @@ const Footer = () => {
                             padding={"0 10px"}
                         />
                         <PrimeryButton
-                            text={'Submit'}
-                            width={'140px'}
+                            text={'SIGN UP'}
+                            width={'148px'}
                             height={'50px'}
                             fontSize={'17px'}
                             lineHeight={'25px'}
@@ -89,9 +89,8 @@ const Footer = () => {
 
                             <div className='footer-nav-links'>
                                 {items.links.map((link, index) => (
-                                    <a href={link.link}>{link.title}</a>
+                                    <a key={index} href={link.link}>{link.title}</a>
                                 ))}
-
                             </div>
                         </div>
                     ))}

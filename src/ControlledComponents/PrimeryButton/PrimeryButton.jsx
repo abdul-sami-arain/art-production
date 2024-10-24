@@ -10,7 +10,9 @@ const PrimeryButton = ({
     fontSize,
     lineHeight,
     fontWeight,
-    color
+    color,
+    arrowTrue,
+    navigateClick,
   }) => {
   return (
     <button className='main-button' 
@@ -22,10 +24,11 @@ const PrimeryButton = ({
         lineHeight: lineHeight,
         fontWeight: fontWeight,
         color: color,
-
-      }}>
+      }}
+      onClick={navigateClick}
+      >
         {text}
-        <img src={right} alt="" />
+        {arrowTrue && <img src={right} alt="" />}
     </button>
   )
 }

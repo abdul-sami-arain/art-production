@@ -6,7 +6,7 @@ import MainHeading from "../Utils/mainHeading";
 export default function FAQs() {
     return(
         <div className="FAQs_section">
-            <MainHeading align={"center"} width={"40%"} content1={"Light, Camera, Answers!"} content2={"(FAQs)"} />
+            <MainHeading align={"center"} width={"50%"} content1={"Light, Camera, Answers!"} content2={"(FAQs)"} />
             <div className="FAQs">
                 <Accordian/>
                 <Accordian/>

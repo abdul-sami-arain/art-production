@@ -26,6 +26,7 @@ const ProductCategories = () => {
               lineHeight={'22px'}
               fontWeight={'400'}
               color={'#fff'}
+              arrowTrue={false}
             />
         ))}
       </div>

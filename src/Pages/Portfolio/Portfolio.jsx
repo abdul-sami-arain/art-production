@@ -8,6 +8,7 @@ import interviewImage from '../../Assets/portfolio/interview.png';
 import ContactForm from '../../Components/ContactForm/ContactForm';
 import ProductCategories from '../../Components/ProductCategory/ProductCategories';
 import SingleProject from '../../Components/SingleProject/SingleProject';
+import ReadyToAsk from '../../GlobalComponents/ReadyToAsk/ReadyToAsk';
 
 const Portfolio = () => {
   
@@ -45,17 +46,21 @@ const Portfolio = () => {
       <div className='see-all-project-btn-div'>
         <PrimeryButton 
           text={'See All Projects'} 
-          width={'182px'} 
+          width={'243px'} 
           height={'50px'} 
           padding={'4px 15px'}  
           fontSize={'18px'}
           lineHeight={'22px'}
           fontWeight={'400'}
           color={'#fff'}
+          arrowTrue={true}
         />
       </div>
-      <ContactForm />
-
+      {/* <ContactForm 
+        titleOne={`Let's Create and`}
+        titleTwo={`Collaborate!`}
+      /> */}
+      <ReadyToAsk />
     </div>
   )
 }

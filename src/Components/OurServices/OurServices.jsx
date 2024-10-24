@@ -54,12 +54,13 @@ const OurServices = () => {
         <div className='see-all-projects-section'>
             <PrimeryButton 
                 text={'See All Projects'} 
-                width={'180px'} 
+                width={'243px'} 
                 height={'55px'}
                 fontSize={'18px'}
                 lineHeight={'22px'}
                 fontWeight={'400'}
                 color={'#fff'}
+                arrowTrue={true}
             />
         </div>
     </div>

@@ -52,6 +52,13 @@ const MainContaint = () => {
       heroDesc: `Through our long experience in this field, we were involved in many sections 
                  of video production. We don’t create only, instead, we try always to invent 
                  and be creative, we think out of the box, that’s why we are the best.`
+    },
+    '/contact-us': {
+      welcomText: 'Welcome To Art Production',
+      mainHeading: 'Contact Us',
+      heroDesc: `We love hearing from you! Whether you're ready to discuss your next project, 
+      have a question, or just want to say hello, we're all ears. Our team is here to make your 
+      experience exceptional. Drop us a message, and let's start a conversation.`
     }
   }
 

@@ -8,6 +8,10 @@ import WorkedWith from '../../Components/workedWith';
 import MainHeading from '../../GlobalComponents/Utils/mainHeading';
 import image1 from "../../Assets/portfolio/interview.png";
 import Award from '../../Components/award';
+import SwiperSlider from '../../Components/Testing';
+import OurLocations from '../../GlobalComponents/OurLocations/location';
+import FAQs from '../../GlobalComponents/FAQs';
+import ReadyToAsk from '../../GlobalComponents/ReadyToAsk/ReadyToAsk';
 
 const About = () => {
   const servicesData = [
@@ -24,7 +28,7 @@ const About = () => {
   ]
   return (
   
-    <div>
+    <div className='about-us-main'>
       <PerformanceCount/>
       <ServiceCard2/>
       <WorkedWith/>
@@ -85,6 +89,10 @@ const About = () => {
 
       </div>
       <Award/>
+      <SwiperSlider />
+      <OurLocations />
+      <FAQs />
+      <ReadyToAsk />
       {/* {servicesData.map((items, index) => (
             <ServiceCard
                 key={index}

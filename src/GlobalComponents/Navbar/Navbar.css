@@ -9,11 +9,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #022532;
+    /* background-color: #022532; */
+     background: rgba(2, 37, 54, 0.2);
     width: 100%;
     height: auto;
     padding: 12px 30px;
     border-radius: 38px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(25px)
+
 }
 
 /* Nav Logo */

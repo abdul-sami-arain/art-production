@@ -11,12 +11,13 @@ export default function ServiceCard2() {
                 </p>
                 <PrimeryButton 
                     text={'Get Started Today'} 
-                    width={'230px'} 
+                    width={'280px'} 
                     height={'55px'}
                     fontSize={'18px'}
                     lineHeight={'22px'}
                     fontWeight={'400'}
                     color={'#fff'}
+                    arrowTrue={true}
                 />
             </div>
             <div className="service-poster-2">

@@ -1,10 +1,12 @@
-import React , {useEffect} from 'react'
+import React , {useState, useEffect} from 'react'
 import './ServiceCard.css';
 import documentaryImage from '../../Assets/services/documentaries.png'
 // import aos from 'aos';
 
-const ServiceCard = ({backgroundColor, slideSection, justifyContent, padding, flexDirection, serviceBanner, serviceHeading, serviceHeadingTwo, paraOne, paraTwo}) => {
-    
+const ServiceCard = ({backgroundColor, projectDone, slideSection, justifyContent, padding, flexDirection, serviceBanner, serviceHeading, serviceHeadingTwo, paraOne, paraTwo}) => {
+    const [showOverlay, setShowOverlay] = useState(false)
+    const handleOveerlayShow = () => {setShowOverlay(true)}
+    const handleOverlayHidden = () => {setShowOverlay(false)}
     return (
     <div 
         className='service-name'  
@@ -15,8 +17,16 @@ const ServiceCard = ({backgroundColor, slideSection, justifyContent, padding, fl
         }}
     >
         <div className='service-poster' style={{justifyContent: justifyContent, padding: padding}}>
-            <div className='service-poster-borders' >
-                <img src={serviceBanner} alt='documentary image' />
+            <div className='service-poster-borders' onMouseEnter={handleOveerlayShow} onMouseLeave={handleOverlayHidden}>
+                <img /* onMouseEnter={handleOveerlayShow} onMouseLeave={handleOverlayHidden} */ src={serviceBanner} alt='documentary image'  />
+                <div className={`service-card-image-overlay ${showOverlay ? 'show-overlay' : ''}`}>
+                    <p>We Have Completed</p>
+                    <h3>{projectDone}</h3>
+                    <span className='overlay-servicce-name'>
+                        <p>{serviceHeading}</p>
+                        <p>{serviceHeadingTwo}</p>
+                    </span>
+                </div>
             </div>
         </div>
         <div className='service-details'>

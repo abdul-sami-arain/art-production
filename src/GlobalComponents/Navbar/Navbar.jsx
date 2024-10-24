@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Navbar.css';
 import logo from '../../Assets/logos/logo.png'
 import PrimeryButton from '../../ControlledComponents/PrimeryButton/PrimeryButton';
+import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -13,6 +14,10 @@ const Navbar = () => {
         {name: 'Portfolio', link: '/our-projects'},
         {name: 'Services', link: '/services'},
     ]
+    const navigate = useNavigate()
+    const navigateToContact = () => {
+        navigate(`/contact-us`)
+    }
   return (
     <div className='navbar-main-container'>
         <div className='navbar-inner-container'>
@@ -34,11 +39,12 @@ const Navbar = () => {
                 <PrimeryButton 
                     text={'Contact Us'} 
                     width={'173px'} 
-                    height={'55px'}
+                    height={'50px'}
                     fontSize={'18px'}
                     lineHeight={'22px'}
                     fontWeight={'400'}
                     color={'#fff'} 
+                    navigateClick={navigateToContact}
                 />
             </div>
         </div>

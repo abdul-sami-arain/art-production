@@ -24,16 +24,16 @@ const Home = () => {
   return (
     <div>
         <PerformanceCount />
-        <ReadyToAsk/>
-       <FAQs/>
         <RecentProjects/>
         <Marquee1/>
-        <OurPartners/>
         <OurServices />
-        <OurTeam/>
         <AboutUs/>
+        <OurPartners/>
+        <OurTeam/>
         <SwiperSlider/>
         <OurLocations/>
+        <FAQs/>
+        <ReadyToAsk/>
 
     </div>
   )
