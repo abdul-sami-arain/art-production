@@ -1,5 +1,6 @@
 import React from 'react'
 import './PrimeryButton.css';
+import right from "../../Assets/right.png"
 
 const PrimeryButton = ({
     text, 
@@ -20,9 +21,11 @@ const PrimeryButton = ({
         fontSize: fontSize,
         lineHeight: lineHeight,
         fontWeight: fontWeight,
-        color: color
+        color: color,
+
       }}>
         {text}
+        <img src={right} alt="" />
     </button>
   )
 }

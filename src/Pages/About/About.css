@@ -1,0 +1,22 @@
+.intro_content{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.intro_content p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.intro_content_right img{
+    height: 400px ;
+    width: 450px;
+    border-radius: 12px;
+}
+

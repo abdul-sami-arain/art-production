@@ -14,6 +14,9 @@ import SwiperSlider from '../../Components/Testing';
 import RecentProjects from '../../Components/RecentProjects';
 import Marquee1 from '../../Components/marquee';
 import Accordian from '../../GlobalComponents/Accordian';
+import FAQs from '../../GlobalComponents/FAQs';
+import ReadyToAsk from '../../GlobalComponents/ReadyToAsk/ReadyToAsk';
+import OurLocations from '../../GlobalComponents/OurLocations/location';
 
 const Home = () => {
 
@@ -21,7 +24,8 @@ const Home = () => {
   return (
     <div>
         <PerformanceCount />
-       <Accordian/>
+        <ReadyToAsk/>
+       <FAQs/>
         <RecentProjects/>
         <Marquee1/>
         <OurPartners/>
@@ -29,6 +33,7 @@ const Home = () => {
         <OurTeam/>
         <AboutUs/>
         <SwiperSlider/>
+        <OurLocations/>
 
     </div>
   )

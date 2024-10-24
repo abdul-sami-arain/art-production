@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import arrow from "../../Assets/ei_arrow-up.png";
 
-export default function Accordian() {
+export default function Accordian({question,answer}) {
     // State to track if the accordion is open
     const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +18,7 @@ export default function Accordian() {
                 <img src={arrow} alt="arrow" />
             </div>
             <p className="question">How much does video production cost?</p>
-            <p className="answer">How much does video production cost How much does video production cost How much does video production cost How much does video production cost  </p>
+            <p className="answer">How much does video production cost How much does video production cost How much does video production cost How much does video production cost </p>
         </div>
     );
 }
